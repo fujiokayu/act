@@ -1,0 +1,18 @@
+[requirements]
+  # cookie / jwt
+  auth_type = "cookie"
+  auth_param = "_app_name_session"
+  target_url = "http://localhost:3000/users/5"
+
+[victim]
+  name = "victim"
+  endpoint_url = "http://localhost:3000/users/sign_in/"
+  user_id = "a@example.com"
+  password = "1111aaaa"
+  csrf_token_name = ""
+[attacker]
+  name = "attacker"
+  endpoint_url = "http://localhost:3000/users/sign_in/"
+  user_id = "b@example.com"
+  password = "1111aaaa"
+  csrf_token_name = ""
